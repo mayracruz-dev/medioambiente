@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5), rgba(251, 194, 235, 0.5) 
+    100%), url(../img/mujerpequeña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hamburgue{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   transition: transform .3s ease-in-out;
+   transform: translate(110%);
+   box-shadow:0 0 6px rgba(0, 0, 0, 0.5);
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion{
+    color: #fff;
+    text-decoration: none;
+}
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;   
+}
+.copy{
+    font-weight: 300;
+    font-size: 25px; 
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #66a6ff;
+    margin-bottom: 40px;
+    font-size: 40px;  
+}
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicios img{
+    width: 40%;
+}
+.ilustraciones1-servicios{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.service{
+    margin-bottom: 20px;
+}
+.n-service{
+    margin-bottom: 7px;
+    color: aqua;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    width: 30px;
+    height: 30px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.gallery{
+    background: #f5f7fa;
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2 ease-in-out;
+
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+    object-fit: cover;
+    width:60% ;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+.expert{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor-expert img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;   
+}
+
+footer{
+    background: aquamarine;
+    color: black;
+    width: 100%;
+    padding:40px;
+    margin-top:50px;
+}
+.contfooter{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content:space-between;
+
+}
+.colum1{
+    font-size: 20px;
+}
+.colum1 p{
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+}
+.colum2{
+    max-width: 400px;
+}
+.colum2 h2{
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    
+}
+.row img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: brown;
+}
+.colum3{
+    max-width: 400px;
+}
+.colum3 h2{
+    font-size: 22px;
+    padding-left: 20PX;
+}
+
+.row2{
+    margin-top: 10px;
+    display: flex;
+    padding-left: 20PX;
+}
+.row2 img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: brown;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    
+    .contenedor-servicios img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .ilustraciones1-servicios{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    .agregar-imagen{
+        width: 80%;
+    }
+    .img-galeria{
+        width: 45%;
+    } .footer-content{
+        justify-content: center;
+    }
+    .contenedor-expert{
+        width: 80%;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    .social-media i{
+        margin-left: 0;
+        
+    }
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+  
+    .contfooter{
+        flex-wrap: wrap;
+    }
+    .colum2,
+    .colum3{
+        width: 80%;
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+    .hamburgue{
+        top:20px;
+        right: 20px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .agregar-imagen{
+        width: 95%;
+    }
+    .img-galeria{
+        width: 95%;
+    }
+    .contfooter{
+        flex-wrap: wrap;
+    }
+    .colum2,
+    .colum3{
+        display: block;
+        width: 90%;
+        padding: 10px;;
+
+    }
+    
+}
